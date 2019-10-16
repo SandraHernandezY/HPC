@@ -11,7 +11,7 @@ void Mandelbrot_secuencial(img_data* data, int depth){
 			c_img= data->lim_inf_img + j* data->muestreo;
 
 			z_0=0;	
-			n=0;
+			n=1;
 
 			z_real= z_0 + c_real;
 			z_img= z_0 + c_img;
@@ -23,7 +23,7 @@ void Mandelbrot_secuencial(img_data* data, int depth){
 
 			while(modulo < 2 && n < depth){
 				
-				z_img= 2*pow_real*pow_img + c_img;
+				z_img= 2*z_real*z_img + c_img;
 				z_real= pow_real - pow_img + c_real;
 				
 				pow_real= pow(z_real, 2);

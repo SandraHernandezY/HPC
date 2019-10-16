@@ -7,6 +7,7 @@
 #include <math.h>
 #include <time.h>  //CLOCKS_PER_SEC
 
+
 //Estructura img_data la cual tiene como objetivo almacenar los datos y
 //las variables necesarias para procesar la imagen deseada
 
@@ -32,6 +33,7 @@ typedef struct img_data
 void crearMatriz(img_data* data);
 void write_img(char* salida, img_data* data);
 void Mandelbrot_secuencial(img_data* data, int depth);
+void Mandelbrot_paralelo(img_data* data, int depth, int n_task);
 
 //void Mandelbrot_paralelo( img_data* image);
 //void ver_matriz(img_data* image, int modo);

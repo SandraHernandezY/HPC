@@ -8,7 +8,7 @@ void crearMatriz(img_data* data){
   j= data->lim_sup_img - (data->lim_inf_img);
   //int ej=3/0.00100;
   //printf("ejemplo=%d\n", ej); 
-  printf("i=%d\nj=%d\n", i,j); 
+  //printf("i=%d\nj=%d\n", i,j); 
   //printf("muestreo=%f\n", data->muestreo);  
 
   x= ceil(i/data->muestreo);
@@ -17,7 +17,7 @@ void crearMatriz(img_data* data){
   data->x= x+1;
   data->y= y+1;
   
-  printf("data->x=%d\n data->y=%d\n", data->x,data->y );
+  //printf("data->x=%d\n data->y=%d\n", data->x,data->y );
 
   //Reservando memoria para la matriz M
   data->M= (float **)malloc (data->x * sizeof(float *));
